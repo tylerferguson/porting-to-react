@@ -1,14 +1,14 @@
 import React from 'react'
+import {
+  BrowserRouter as Router,
+  Route,
+} from 'react-router-dom'
+
+import Home from './pages/Home'
 
 const App = () =>
-<div>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/books">Books</a></li>
-  </ul>
-
-  <div>Hello World!</div>
-</div>
+  <Router>
+    <Route exact path="/" component={Home}/>
+  </Router>
 
 export default App
