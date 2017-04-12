@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Home = () =>
+const Books = () =>
   <div>
     <ul>
       <li><Link to="/">Home</Link></li>
@@ -9,7 +9,7 @@ const Home = () =>
       <li><Link to="/books">Books</Link></li>
     </ul>
 
-    <div>Hello World!</div>
+    <div>Here are books!</div>
   </div>
 
-export default Home
+export default Books

@@ -5,10 +5,14 @@ import {
 } from 'react-router-dom'
 
 import Home from './pages/Home'
+import Books from './pages/Books'
 
 const App = () =>
   <Router>
-    <Route exact path="/" component={Home}/>
+    <div>
+      <Route exact path="/" component={Home}/>
+      <Route path="/books" component={Books}/>
+    </div>
   </Router>
 
 export default App
